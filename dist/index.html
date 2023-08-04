@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>AdminHub -Tailwind</title>
+        <!-- Css -->
+        <link rel="stylesheet" href="css/style.css" />
+        <!-- Boxicons -->
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+        />
+    </head>
+    <body class="flex flex-col h-screen w-screen font ">
+        <header class="w-screen flex h-10 bg-slate-500  px-2">
+            <div class="flex md:w-40 left">
+                <div class="flex  log">
+                    <div class="md:hidden" ><i class=" bx bx-menu"></i></div>
+
+                    <p class="hidden md:flex  brand">
+                        <i class=" bx bxs-smile"></i>
+                        <span class="text">AdminHub</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex flex-1 justify-between right">
+                <div class="title">
+                    <h2 class="pad-le mr-2 hidden md:block" id="h1Receive">inicial</h2>
+                </div>
+            <div class="w-full mx-4 max-w-xl">
+                <label class=" w-full">
+                    <input type="text" name="" id="" class=" w-full rounded-full">
+                </label>
+            </div>
+
+                <div class="flex justify-between modIdent">
+                    <div class=" flex justify-center content-center mod">
+                        <div class=" moon"><i class="bx bx-moon "></i></div>
+                        <div class="hidden sun"><i class="bx bx-sun" style="display:none white"></i></div>
+                    </div>
+                    <div class="flex ident">
+                        <p class="admName">Nome</p>
+                        <div class="photo">foto</div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class=" flex bg-slate-300 ">
+            <nav class=" flex-col w-40 h-max  bg-white absolute top-2.5 left-5 rounded-lg hidden md:invisible menuListPhoneMode ">
+
+                <div class="flex flex-nowrap justify-between mb-3 px-2">
+                    <div class="flex ">
+                        <i class="bx bxs-smile"></i>
+                        <span class="text">AdminHub</span>
+                    </div>
+                    <i class="bx bx-x close-icon"></i>
+                </div>
+
+                <div class="flex flex-col mx-auto leading-7  list">
+                    <a href="pages/Dashboad.html">
+                        <i class="bx bxs-dashboard"></i>
+                        Dashboard
+                    </a>
+                    <a href="pages/MyStore.html">
+                        <i class="bx bxs-shopping-bag-alt"></i>
+                        My Store
+                    </a>
+                    <a href="pages/Analytics.html">
+                        <i class="bx bxs-doughnut-chart"></i>
+                        Analytics
+                    </a>
+                    <a href="pages/Message.html">
+                        <i class="bx bxs-message-dots"></i>
+                        Message
+                    </a>
+                    <a href="pages/Team.html">
+                        <i class="bx bxs-group"></i>
+                        Team
+                    </a>
+                    <a href="pages/Settings.html">
+                        <i class="bx bxs-cog"></i>
+                        Settings
+                    </a>
+                    <a href="pages/logout.html" class="logout">
+                        <i class="bx bxs-log-out-circle"></i>
+                        Logout
+                    </a>
+                </div>
+            </nav>
+
+            <nav class="hidden h-full w-40 bg-slate-600 md:flex md:flex-col flex-wrap content-center justify-between pb-10 menuList">
+                <div class="flex flex-col list">
+                    <a class="hoverEffect" href="pages/Dashboad.html">
+                        <i class="bx bxs-dashboard"></i>
+                        Dashboard
+                    </a>
+                    <a class="hoverEffect" href="pages/MyStore.html">
+                        <i class="bx bxs-shopping-bag-alt"></i>
+                        My Store
+                    </a>
+                    <a class="hoverEffect" href="pages/Analytics.html">
+                        <i class="bx bxs-doughnut-chart"></i>
+                        Analytics
+                    </a>
+                    <a class="hoverEffect" href="pages/Message.html">
+                        <i class="bx bxs-message-dots"></i>
+                        Message
+                    </a>
+                    <a class="hoverEffect" href="pages/Team.html">
+                        <i class="bx bxs-group"></i>
+                        Team
+                    </a>
+                    <a class="hoverEffect" href="pages/Settings.html">
+                        <i class="bx bxs-cog"></i>
+                        Settings
+                    </a>
+                </div>
+
+                <div>
+                    <a href="pages/logout.html" class="logout">
+                        <i class="bx bxs-log-out-circle"></i>
+                        Logout
+                    </a>
+                </div>
+            </nav>
+
+            <section class="flex flex-wrap h-full md:w-full overflow-y-scroll  content">inicial</section>
+        </main>
+        <script src="script/interactions.js"></script>
+        <script src="script/script.js"></script>
+    </body>
+</html>

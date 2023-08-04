@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap");
+
+@layer base {
+    :root {
+        --poppins: "Poppins", sans-serif;
+        --lato: "Lato", sans-serif;
+    
+        --light: 249, 249, 249;
+        --blue: 60, 145, 230;
+        --light-blue: #cfe8ff;
+        --grey: #eee;
+        --dark-grey: #aaaaaa;
+        --dark: #342e37;
+        --red: #db504a;
+        --yellow: #ffce26;
+        --light-yellow: #fff2c6;
+        --orange: #fd7238;
+        --light-orange: #ffe0d3;
+    }
+}
+
+@layer components {
+    .pad-le {
+        padding-left: 5%;
+
+    }
+
+    .list-btn{
+
+    }
+
+    .active{
+        box-shadow: inset 1px 1px 20px 0px rgba(0, 0, 0, 0.705);
+    }
+}
+
