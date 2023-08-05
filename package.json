@@ -1,7 +1,7 @@
 {
   "name": "adminhub-tailwind",
   "version": "1.0.0",
-  "description": "",
+  "description": "Adminhub with Tailwind",
   "main": "index.js",
   "scripts": {
     "test": "npx tailwindcss -i ./src/css/input.css -o ./dist/css/style.css --watch"

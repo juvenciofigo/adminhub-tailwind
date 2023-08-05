@@ -669,8 +669,8 @@ video {
   justify-content: space-between;
 }
 
-.overflow-y-scroll {
-  overflow-y: scroll;
+.overflow-y-auto {
+  overflow-y: auto;
 }
 
 .rounded-full {
