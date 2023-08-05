@@ -1,4 +1,5 @@
-# adminhub-tailwind
+# Admin_hub-tailwind
 
-Adminhub with Tailwind
-<a href="dist/index.html">My Store</a>
+
+
+<a href="dist/index.html">Admin-hub with Tailwind</a>
