@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --poppins: "Poppins", sans-serif;
+    --lato: "Lato", sans-serif;
+
+    --light: #f9f9f9;
+    --blue: #3c91e6;
+    --light-blue: #cfe8ff;
+    --grey: #eee;
+    --dark-grey: #aaaaaa;
+    --dark: #342e37;
+    --red: #db504a;
+    --yellow: #ffce26;
+    --light-yellow: #fff2c6;
+    --orange: #fd7238;
+    --light-orange: #ffe0d3;
+}
+a {
+    text-decoration: none;
+    color: var(--blue);
+}
+/* Login */
+
+body.bodyLogin > section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 2px;
+    padding: 50px;
+  }
+  
+  section .photoSection {
+    background-image: url(../imgs/olena-sergienko-DNCZaeuCF6U-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-grow: 2;
+    flex-shrink: 0;
+    flex-basis: 200px;
+    height: 200px; /* Ajuste a altura desejada */
+    border: 1px solid black;
+  }
+  
+  section .toPut {
+    flex-grow: 4;
+    border: 1px solid black;
+    height: 200px; /* Ajuste a altura desejada */
+  }
+  
+/* Login */
+
+
+.active {
+    box-shadow: inset 1px 1px 20px 0px rgba(0, 0, 0, 0.705);
+}
+header {
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+    height: 40px;
+    width: 100%;
+}
+header .left {
+    width: 140px;
+}
+header .left .log {
+    display: flex;
+}
+
+header .left .log .bx-menu {
+    display: none;
+}
+header .right {
+    display: flex;
+    align-items: center;
+    width: calc(100% - 140px);
+    justify-content: space-between;
+    padding-left: 5%;
+}
+header .right .modIdent {
+    display: flex;
+    gap: 15px;
+}
+
+header .right .mod .bx-sun {
+    display: none;
+}
+header .right .ident {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+main {
+    display: flex;
+    height: calc(100vh - 40px);
+}
+nav.menuListPhoneMode {
+    display: none;
+}
+nav.menuList {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 80px;
+    padding-left: 10px;
+    justify-content: space-between;
+    height: calc(100vh - 40px);
+    width: 150px;
+}
+nav.menuList .list {
+    line-height: 30px;
+}
+nav.menuList:nth-child(2) {
+    padding-left: 15px;
+}
+nav.menuList .list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+nav.menuList .list a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 30px;
+    background: var(--light-blue);
+    border-radius: 10px;
+    width: 110px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+nav.menuList .list a.hoverEffect:hover {
+    box-shadow: 1px 1px 20px 0px rgba(0, 0, 0, 0.267);
+}
+
+nav.menuList .logout {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 30px;
+    background: var(--dark-grey);
+    border-radius: 10px;
+    width: 110px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+section.content {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: calc(100% - 150px);
+    box-shadow: 1px 1px 20px 0px rgba(0, 0, 0, 0.267);
+    overflow-y: auto;
+}
+section.content::-webkit-scrollbar {
+    margin: 0px;
+    padding: 0px;
+    width: 5px;
+    background-color: var(--light-blue);
+}
+section.content::-webkit-scrollbar-thumb {
+    width: 100%;
+    background-color: var(--blue);
+    border-radius: 10px;
+}
+.content h1 {
+    display: none;
+}
+
+@media screen and (max-width: 450px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header .left .log .bx-menu {
+        display: block;
+    }
+
+    nav.menuList {
+        display: none;
+    }
+
+    /* LEFT */
+    .left .brand {
+        display: none;
+    }
+    .left .log {
+        display: flex;
+    }
+
+    /* LEFT */
+
+    /* RIGHT */
+    .right {
+        display: flex;
+    }
+    .right .ident {
+        display: flex;
+    }
+    /* RIGHT */
+
+    /* Main */
+
+    nav.menuListPhoneMode {
+        display: none;
+        flex-direction: column;
+        height: max-content;
+        padding: 5px 15px 15px 15px;
+        position: absolute;
+        top: 10px;
+        left: 20px;
+        width: 170px;
+        border-radius: 20px;
+        box-shadow: 5px 5px 30px #080a0cbe;
+        background: var(--light);
+    }
+    nav.menuListPhoneMode > div:nth-child(1) {
+        display: flex;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        justify-content: space-between;
+    }
+    nav.menuListPhoneMode div div {
+        display: flex;
+        gap: 2px;
+        align-items: center;
+    }
+
+    nav.menuListPhoneMode .list {
+        display: flex;
+        flex-direction: column;
+        line-height: 30px;
+        margin-left: 10px;
+    }
+
+    section.content {
+        margin: 10px;
+        width: 100%;
+        text-align: justify;
+    }
+    /* Main */
+}
